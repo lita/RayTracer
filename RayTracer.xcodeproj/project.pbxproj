@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB094A880E8F771E00EC2DCF /* algebra3.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF0F2BB0E88C6660093DDEA /* algebra3.h */; };
+		EB094AA00E8F77F700EC2DCF /* determinate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB094A8A0E8F772E00EC2DCF /* determinate.cpp */; };
+		EB335312106345C000B9C45A /* objParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBC381FA0E997F310032983D /* objParser.cpp */; };
+		EB335313106345C000B9C45A /* Lights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB18E9D50E88C283004B05CF /* Lights.cpp */; };
+		EB335314106345C000B9C45A /* Shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB85442D0E8A008E004C5B2D /* Shapes.cpp */; };
+		EB335315106345C000B9C45A /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48A0E8A0EC900E21497 /* Camera.cpp */; };
+		EB335316106345C000B9C45A /* Film.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48C0E8A0EC900E21497 /* Film.cpp */; };
+		EB335317106345C000B9C45A /* raytrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48E0E8A0EC900E21497 /* raytrace.cpp */; };
+		EB335318106345C000B9C45A /* rgb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48F0E8A0EC900E21497 /* rgb.cpp */; };
+		EB335319106345C000B9C45A /* Sampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF4900E8A0EC900E21497 /* Sampler.cpp */; };
+		EB33531A106345C000B9C45A /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF4920E8A0EC900E21497 /* Scene.cpp */; };
+		EB33531B106345C000B9C45A /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE7481B0E8B712600282C6C /* Ray.cpp */; };
+		EB33531C106345C000B9C45A /* RayTracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE7481D0E8B712600282C6C /* RayTracer.cpp */; };
+		EB33531D106345C000B9C45A /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C69C0E8CC090004B555C /* Material.cpp */; };
+		EB33531E106345C000B9C45A /* Primitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C69E0E8CC090004B555C /* Primitives.cpp */; };
+		EB33531F106345C000B9C45A /* mersenne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB5FE8F0E9C668000D66120 /* mersenne.cpp */; };
+		EB335320106345C000B9C45A /* rancombi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB6C9EE60EA0394E009B2DD4 /* rancombi.cpp */; };
+		EB335322106345C000B9C45A /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFBF4D40E8A271100E21497 /* libfreeimage.a */; };
+		EB335324106345C000B9C45A /* objParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC381F90E997F310032983D /* objParser.h */; };
+		EB335325106345C000B9C45A /* rgb.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF0F2BC0E88C6770093DDEA /* rgb.h */; };
+		EB335326106345C000B9C45A /* algebra3.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF0F2BB0E88C6660093DDEA /* algebra3.h */; };
+		EB335327106345C000B9C45A /* Lights.h in Headers */ = {isa = PBXBuildFile; fileRef = EB18E9D40E88C283004B05CF /* Lights.h */; };
+		EB335328106345C000B9C45A /* Shapes.h in Headers */ = {isa = PBXBuildFile; fileRef = EB85442C0E8A008E004C5B2D /* Shapes.h */; };
+		EB335329106345C000B9C45A /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF48B0E8A0EC900E21497 /* Camera.h */; };
+		EB33532A106345C000B9C45A /* Film.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF48D0E8A0EC900E21497 /* Film.h */; };
+		EB33532B106345C000B9C45A /* Sampler.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF4910E8A0EC900E21497 /* Sampler.h */; };
+		EB33532C106345C000B9C45A /* Scene.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF4930E8A0EC900E21497 /* Scene.h */; };
+		EB33532D106345C000B9C45A /* FreeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF4D60E8A272700E21497 /* FreeImage.h */; };
+		EB33532E106345C000B9C45A /* IntersectRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE7481A0E8B712600282C6C /* IntersectRecord.h */; };
+		EB33532F106345C000B9C45A /* Ray.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE7481C0E8B712600282C6C /* Ray.h */; };
+		EB335330106345C000B9C45A /* RayTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE7481E0E8B712600282C6C /* RayTracer.h */; };
+		EB335331106345C000B9C45A /* Material.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD7C69D0E8CC090004B555C /* Material.h */; };
+		EB335332106345C000B9C45A /* Primitives.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD7C69F0E8CC090004B555C /* Primitives.h */; };
+		EB335333106345C000B9C45A /* randomc.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB5FE8D0E9C667500D66120 /* randomc.h */; };
+		EB335334106345C000B9C45A /* RenderSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB5FE910E9C668D00D66120 /* RenderSettings.h */; };
+		EB6C9EE70EA0394E009B2DD4 /* rancombi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB6C9EE60EA0394E009B2DD4 /* rancombi.cpp */; };
+		EB813FE90E99EB5300C038A9 /* objParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBC381FA0E997F310032983D /* objParser.cpp */; };
+		EB813FEA0E99EB5A00C038A9 /* objParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC381F90E997F310032983D /* objParser.h */; };
+		EB85442E0E8A008E004C5B2D /* Shapes.h in Headers */ = {isa = PBXBuildFile; fileRef = EB85442C0E8A008E004C5B2D /* Shapes.h */; };
+		EB85442F0E8A008E004C5B2D /* Shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB85442D0E8A008E004C5B2D /* Shapes.cpp */; };
+		EBB5FE8E0E9C667500D66120 /* randomc.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB5FE8D0E9C667500D66120 /* randomc.h */; };
+		EBB5FE900E9C668000D66120 /* mersenne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBB5FE8F0E9C668000D66120 /* mersenne.cpp */; };
+		EBB5FE920E9C668D00D66120 /* RenderSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = EBB5FE910E9C668D00D66120 /* RenderSettings.h */; };
+		EBD7C6A00E8CC090004B555C /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C69C0E8CC090004B555C /* Material.cpp */; };
+		EBD7C6A10E8CC090004B555C /* Material.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD7C69D0E8CC090004B555C /* Material.h */; };
+		EBD7C6A20E8CC090004B555C /* Primitives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C69E0E8CC090004B555C /* Primitives.cpp */; };
+		EBD7C6A30E8CC090004B555C /* Primitives.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD7C69F0E8CC090004B555C /* Primitives.h */; };
+		EBE7481F0E8B712600282C6C /* IntersectRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE7481A0E8B712600282C6C /* IntersectRecord.h */; };
+		EBE748200E8B712600282C6C /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE7481B0E8B712600282C6C /* Ray.cpp */; };
+		EBE748210E8B712600282C6C /* Ray.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE7481C0E8B712600282C6C /* Ray.h */; };
+		EBE748220E8B712600282C6C /* RayTracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE7481D0E8B712600282C6C /* RayTracer.cpp */; };
+		EBE748230E8B712600282C6C /* RayTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE7481E0E8B712600282C6C /* RayTracer.h */; };
+		EBF0F2F60E88CF690093DDEA /* Lights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB18E9D50E88C283004B05CF /* Lights.cpp */; };
+		EBF0F2F80E88CF7C0093DDEA /* rgb.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF0F2BC0E88C6770093DDEA /* rgb.h */; };
+		EBF0F2F90E88CF7C0093DDEA /* algebra3.h in Headers */ = {isa = PBXBuildFile; fileRef = EBF0F2BB0E88C6660093DDEA /* algebra3.h */; };
+		EBF0F2FA0E88CF7C0093DDEA /* Lights.h in Headers */ = {isa = PBXBuildFile; fileRef = EB18E9D40E88C283004B05CF /* Lights.h */; };
+		EBFBF4940E8A0EC900E21497 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48A0E8A0EC900E21497 /* Camera.cpp */; };
+		EBFBF4950E8A0EC900E21497 /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF48B0E8A0EC900E21497 /* Camera.h */; };
+		EBFBF4960E8A0EC900E21497 /* Film.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48C0E8A0EC900E21497 /* Film.cpp */; };
+		EBFBF4970E8A0EC900E21497 /* Film.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF48D0E8A0EC900E21497 /* Film.h */; };
+		EBFBF4980E8A0EC900E21497 /* raytrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48E0E8A0EC900E21497 /* raytrace.cpp */; };
+		EBFBF4990E8A0EC900E21497 /* rgb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF48F0E8A0EC900E21497 /* rgb.cpp */; };
+		EBFBF49A0E8A0EC900E21497 /* Sampler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF4900E8A0EC900E21497 /* Sampler.cpp */; };
+		EBFBF49B0E8A0EC900E21497 /* Sampler.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF4910E8A0EC900E21497 /* Sampler.h */; };
+		EBFBF49C0E8A0EC900E21497 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBFBF4920E8A0EC900E21497 /* Scene.cpp */; };
+		EBFBF49D0E8A0EC900E21497 /* Scene.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF4930E8A0EC900E21497 /* Scene.h */; };
+		EBFBF4D50E8A271100E21497 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFBF4D40E8A271100E21497 /* libfreeimage.a */; };
+		EBFBF4D70E8A272700E21497 /* FreeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EBFBF4D60E8A272700E21497 /* FreeImage.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB094A810E8F76EC00EC2DCF /* Untitled */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Untitled; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB094A8A0E8F772E00EC2DCF /* determinate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = determinate.cpp; sourceTree = "<group>"; };
+		EB18E9D40E88C283004B05CF /* Lights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lights.h; sourceTree = "<group>"; };
+		EB18E9D50E88C283004B05CF /* Lights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lights.cpp; sourceTree = "<group>"; };
+		EB335338106345C000B9C45A /* Lights */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lights; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6C9EE60EA0394E009B2DD4 /* rancombi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rancombi.cpp; sourceTree = "<group>"; };
+		EB85442C0E8A008E004C5B2D /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
+		EB85442D0E8A008E004C5B2D /* Shapes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shapes.cpp; sourceTree = "<group>"; };
+		EBB5FE8D0E9C667500D66120 /* randomc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randomc.h; sourceTree = "<group>"; };
+		EBB5FE8F0E9C668000D66120 /* mersenne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mersenne.cpp; sourceTree = "<group>"; };
+		EBB5FE910E9C668D00D66120 /* RenderSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderSettings.h; sourceTree = "<group>"; };
+		EBC381F90E997F310032983D /* objParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objParser.h; sourceTree = "<group>"; };
+		EBC381FA0E997F310032983D /* objParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = objParser.cpp; sourceTree = "<group>"; };
+		EBD7C69C0E8CC090004B555C /* Material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Material.cpp; sourceTree = "<group>"; };
+		EBD7C69D0E8CC090004B555C /* Material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Material.h; sourceTree = "<group>"; };
+		EBD7C69E0E8CC090004B555C /* Primitives.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Primitives.cpp; sourceTree = "<group>"; };
+		EBD7C69F0E8CC090004B555C /* Primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Primitives.h; sourceTree = "<group>"; };
+		EBE7481A0E8B712600282C6C /* IntersectRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntersectRecord.h; sourceTree = "<group>"; };
+		EBE7481B0E8B712600282C6C /* Ray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ray.cpp; sourceTree = "<group>"; };
+		EBE7481C0E8B712600282C6C /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ray.h; sourceTree = "<group>"; };
+		EBE7481D0E8B712600282C6C /* RayTracer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RayTracer.cpp; sourceTree = "<group>"; };
+		EBE7481E0E8B712600282C6C /* RayTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayTracer.h; sourceTree = "<group>"; };
+		EBF0F2BB0E88C6660093DDEA /* algebra3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algebra3.h; sourceTree = "<group>"; };
+		EBF0F2BC0E88C6770093DDEA /* rgb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rgb.h; sourceTree = "<group>"; };
+		EBF0F2F20E88CF610093DDEA /* Lights */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lights; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFBF48A0E8A0EC900E21497 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		EBFBF48B0E8A0EC900E21497 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		EBFBF48C0E8A0EC900E21497 /* Film.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Film.cpp; sourceTree = "<group>"; };
+		EBFBF48D0E8A0EC900E21497 /* Film.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Film.h; sourceTree = "<group>"; };
+		EBFBF48E0E8A0EC900E21497 /* raytrace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = raytrace.cpp; sourceTree = "<group>"; };
+		EBFBF48F0E8A0EC900E21497 /* rgb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rgb.cpp; sourceTree = "<group>"; };
+		EBFBF4900E8A0EC900E21497 /* Sampler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sampler.cpp; sourceTree = "<group>"; };
+		EBFBF4910E8A0EC900E21497 /* Sampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sampler.h; sourceTree = "<group>"; };
+		EBFBF4920E8A0EC900E21497 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		EBFBF4930E8A0EC900E21497 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		EBFBF4D40E8A271100E21497 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = "/opt/local/var/macports/software/freeimage/3.10.0_0+darwin_9+universal/opt/local/lib/libfreeimage.a"; sourceTree = "<absolute>"; };
+		EBFBF4D60E8A272700E21497 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeImage.h; path = "/opt/local/var/macports/software/freeimage/3.10.0_0+darwin_9+universal/opt/local/include/FreeImage.h"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB094A7F0E8F76EC00EC2DCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB335321106345C000B9C45A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB335322106345C000B9C45A /* libfreeimage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF0F2F00E88CF610093DDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFBF4D50E8A271100E21497 /* libfreeimage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB18E9C60E88B8D6004B05CF = {
+			isa = PBXGroup;
+			children = (
+				EB6C9EE60EA0394E009B2DD4 /* rancombi.cpp */,
+				EBB5FE910E9C668D00D66120 /* RenderSettings.h */,
+				EBB5FE8F0E9C668000D66120 /* mersenne.cpp */,
+				EBB5FE8D0E9C667500D66120 /* randomc.h */,
+				EBD7C69C0E8CC090004B555C /* Material.cpp */,
+				EBD7C69D0E8CC090004B555C /* Material.h */,
+				EBD7C69E0E8CC090004B555C /* Primitives.cpp */,
+				EBD7C69F0E8CC090004B555C /* Primitives.h */,
+				EBE7481A0E8B712600282C6C /* IntersectRecord.h */,
+				EBE7481B0E8B712600282C6C /* Ray.cpp */,
+				EBFBF4D40E8A271100E21497 /* libfreeimage.a */,
+				EBE7481C0E8B712600282C6C /* Ray.h */,
+				EBE7481D0E8B712600282C6C /* RayTracer.cpp */,
+				EBE7481E0E8B712600282C6C /* RayTracer.h */,
+				EBFBF4D60E8A272700E21497 /* FreeImage.h */,
+				EBFBF48A0E8A0EC900E21497 /* Camera.cpp */,
+				EBFBF48B0E8A0EC900E21497 /* Camera.h */,
+				EBFBF48C0E8A0EC900E21497 /* Film.cpp */,
+				EBFBF48D0E8A0EC900E21497 /* Film.h */,
+				EBFBF48E0E8A0EC900E21497 /* raytrace.cpp */,
+				EBFBF48F0E8A0EC900E21497 /* rgb.cpp */,
+				EBFBF4900E8A0EC900E21497 /* Sampler.cpp */,
+				EBFBF4910E8A0EC900E21497 /* Sampler.h */,
+				EBFBF4920E8A0EC900E21497 /* Scene.cpp */,
+				EBFBF4930E8A0EC900E21497 /* Scene.h */,
+				EBF0F2BC0E88C6770093DDEA /* rgb.h */,
+				EBF0F2BB0E88C6660093DDEA /* algebra3.h */,
+				EB18E9D40E88C283004B05CF /* Lights.h */,
+				EB18E9D50E88C283004B05CF /* Lights.cpp */,
+				EBF0F2C40E88CCEE0093DDEA /* Products */,
+				EB85442C0E8A008E004C5B2D /* Shapes.h */,
+				EB85442D0E8A008E004C5B2D /* Shapes.cpp */,
+				EB094A8A0E8F772E00EC2DCF /* determinate.cpp */,
+				EBC381F90E997F310032983D /* objParser.h */,
+				EBC381FA0E997F310032983D /* objParser.cpp */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF0F2C40E88CCEE0093DDEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF0F2F20E88CF610093DDEA /* Lights */,
+				EB094A810E8F76EC00EC2DCF /* Untitled */,
+				EB335338106345C000B9C45A /* Lights */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB094A860E8F771D00EC2DCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB094A880E8F771E00EC2DCF /* algebra3.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB335323106345C000B9C45A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB335324106345C000B9C45A /* objParser.h in Headers */,
+				EB335325106345C000B9C45A /* rgb.h in Headers */,
+				EB335326106345C000B9C45A /* algebra3.h in Headers */,
+				EB335327106345C000B9C45A /* Lights.h in Headers */,
+				EB335328106345C000B9C45A /* Shapes.h in Headers */,
+				EB335329106345C000B9C45A /* Camera.h in Headers */,
+				EB33532A106345C000B9C45A /* Film.h in Headers */,
+				EB33532B106345C000B9C45A /* Sampler.h in Headers */,
+				EB33532C106345C000B9C45A /* Scene.h in Headers */,
+				EB33532D106345C000B9C45A /* FreeImage.h in Headers */,
+				EB33532E106345C000B9C45A /* IntersectRecord.h in Headers */,
+				EB33532F106345C000B9C45A /* Ray.h in Headers */,
+				EB335330106345C000B9C45A /* RayTracer.h in Headers */,
+				EB335331106345C000B9C45A /* Material.h in Headers */,
+				EB335332106345C000B9C45A /* Primitives.h in Headers */,
+				EB335333106345C000B9C45A /* randomc.h in Headers */,
+				EB335334106345C000B9C45A /* RenderSettings.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF0F2FF0E88CFA80093DDEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB813FEA0E99EB5A00C038A9 /* objParser.h in Headers */,
+				EBF0F2F80E88CF7C0093DDEA /* rgb.h in Headers */,
+				EBF0F2F90E88CF7C0093DDEA /* algebra3.h in Headers */,
+				EBF0F2FA0E88CF7C0093DDEA /* Lights.h in Headers */,
+				EB85442E0E8A008E004C5B2D /* Shapes.h in Headers */,
+				EBFBF4950E8A0EC900E21497 /* Camera.h in Headers */,
+				EBFBF4970E8A0EC900E21497 /* Film.h in Headers */,
+				EBFBF49B0E8A0EC900E21497 /* Sampler.h in Headers */,
+				EBFBF49D0E8A0EC900E21497 /* Scene.h in Headers */,
+				EBFBF4D70E8A272700E21497 /* FreeImage.h in Headers */,
+				EBE7481F0E8B712600282C6C /* IntersectRecord.h in Headers */,
+				EBE748210E8B712600282C6C /* Ray.h in Headers */,
+				EBE748230E8B712600282C6C /* RayTracer.h in Headers */,
+				EBD7C6A10E8CC090004B555C /* Material.h in Headers */,
+				EBD7C6A30E8CC090004B555C /* Primitives.h in Headers */,
+				EBB5FE8E0E9C667500D66120 /* randomc.h in Headers */,
+				EBB5FE920E9C668D00D66120 /* RenderSettings.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB094A800E8F76EC00EC2DCF /* determinant test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB094A870E8F771D00EC2DCF /* Build configuration list for PBXNativeTarget "determinant test" */;
+			buildPhases = (
+				EB094A7E0E8F76EC00EC2DCF /* Sources */,
+				EB094A860E8F771D00EC2DCF /* Headers */,
+				EB094A7F0E8F76EC00EC2DCF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "determinant test";
+			productName = Untitled;
+			productReference = EB094A810E8F76EC00EC2DCF /* Untitled */;
+			productType = "com.apple.product-type.tool";
+		};
+		EB335310106345C000B9C45A /* Lights copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB335335106345C000B9C45A /* Build configuration list for PBXNativeTarget "Lights copy" */;
+			buildPhases = (
+				EB335311106345C000B9C45A /* Sources */,
+				EB335321106345C000B9C45A /* Frameworks */,
+				EB335323106345C000B9C45A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lights copy";
+			productName = Lights;
+			productReference = EB335338106345C000B9C45A /* Lights */;
+			productType = "com.apple.product-type.tool";
+		};
+		EBF0F2F10E88CF610093DDEA /* Lights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF0F3000E88CFA80093DDEA /* Build configuration list for PBXNativeTarget "Lights" */;
+			buildPhases = (
+				EBF0F2EF0E88CF610093DDEA /* Sources */,
+				EBF0F2F00E88CF610093DDEA /* Frameworks */,
+				EBF0F2FF0E88CFA80093DDEA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lights;
+			productName = Lights;
+			productReference = EBF0F2F20E88CF610093DDEA /* Lights */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB18E9C80E88B8D6004B05CF /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EB18E9CB0E88B8D6004B05CF /* Build configuration list for PBXProject "RayTracer" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = EB18E9C60E88B8D6004B05CF;
+			productRefGroup = EBF0F2C40E88CCEE0093DDEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF0F2F10E88CF610093DDEA /* Lights */,
+				EB094A800E8F76EC00EC2DCF /* determinant test */,
+				EB335310106345C000B9C45A /* Lights copy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB094A7E0E8F76EC00EC2DCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB094AA00E8F77F700EC2DCF /* determinate.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB335311106345C000B9C45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB335312106345C000B9C45A /* objParser.cpp in Sources */,
+				EB335313106345C000B9C45A /* Lights.cpp in Sources */,
+				EB335314106345C000B9C45A /* Shapes.cpp in Sources */,
+				EB335315106345C000B9C45A /* Camera.cpp in Sources */,
+				EB335316106345C000B9C45A /* Film.cpp in Sources */,
+				EB335317106345C000B9C45A /* raytrace.cpp in Sources */,
+				EB335318106345C000B9C45A /* rgb.cpp in Sources */,
+				EB335319106345C000B9C45A /* Sampler.cpp in Sources */,
+				EB33531A106345C000B9C45A /* Scene.cpp in Sources */,
+				EB33531B106345C000B9C45A /* Ray.cpp in Sources */,
+				EB33531C106345C000B9C45A /* RayTracer.cpp in Sources */,
+				EB33531D106345C000B9C45A /* Material.cpp in Sources */,
+				EB33531E106345C000B9C45A /* Primitives.cpp in Sources */,
+				EB33531F106345C000B9C45A /* mersenne.cpp in Sources */,
+				EB335320106345C000B9C45A /* rancombi.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF0F2EF0E88CF610093DDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB813FE90E99EB5300C038A9 /* objParser.cpp in Sources */,
+				EBF0F2F60E88CF690093DDEA /* Lights.cpp in Sources */,
+				EB85442F0E8A008E004C5B2D /* Shapes.cpp in Sources */,
+				EBFBF4940E8A0EC900E21497 /* Camera.cpp in Sources */,
+				EBFBF4960E8A0EC900E21497 /* Film.cpp in Sources */,
+				EBFBF4980E8A0EC900E21497 /* raytrace.cpp in Sources */,
+				EBFBF4990E8A0EC900E21497 /* rgb.cpp in Sources */,
+				EBFBF49A0E8A0EC900E21497 /* Sampler.cpp in Sources */,
+				EBFBF49C0E8A0EC900E21497 /* Scene.cpp in Sources */,
+				EBE748200E8B712600282C6C /* Ray.cpp in Sources */,
+				EBE748220E8B712600282C6C /* RayTracer.cpp in Sources */,
+				EBD7C6A00E8CC090004B555C /* Material.cpp in Sources */,
+				EBD7C6A20E8CC090004B555C /* Primitives.cpp in Sources */,
+				EBB5FE900E9C668000D66120 /* mersenne.cpp in Sources */,
+				EB6C9EE70EA0394E009B2DD4 /* rancombi.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EB094A830E8F76ED00EC2DCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Untitled;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		EB094A840E8F76ED00EC2DCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Untitled;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		EB18E9C90E88B8D6004B05CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		EB18E9CA0E88B8D6004B05CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		EB335336106345C000B9C45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"/opt/local/var/macports/software/freeimage/3.10.0_0+darwin_9+universal/opt/local/lib\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Lights;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		EB335337106345C000B9C45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"/opt/local/var/macports/software/freeimage/3.10.0_0+darwin_9+universal/opt/local/lib\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Lights;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		EBF0F2F40E88CF610093DDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"/opt/local/var/macports/software/freeimage/3.10.0_0+darwin_9+universal/opt/local/lib\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Lights;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		EBF0F2F50E88CF610093DDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"/opt/local/var/macports/software/freeimage/3.10.0_0+darwin_9+universal/opt/local/lib\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Lights;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB094A870E8F771D00EC2DCF /* Build configuration list for PBXNativeTarget "determinant test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB094A830E8F76ED00EC2DCF /* Debug */,
+				EB094A840E8F76ED00EC2DCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB18E9CB0E88B8D6004B05CF /* Build configuration list for PBXProject "RayTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB18E9C90E88B8D6004B05CF /* Debug */,
+				EB18E9CA0E88B8D6004B05CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB335335106345C000B9C45A /* Build configuration list for PBXNativeTarget "Lights copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB335336106345C000B9C45A /* Debug */,
+				EB335337106345C000B9C45A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF0F3000E88CFA80093DDEA /* Build configuration list for PBXNativeTarget "Lights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF0F2F40E88CF610093DDEA /* Debug */,
+				EBF0F2F50E88CF610093DDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB18E9C80E88B8D6004B05CF /* Project object */;
+}
